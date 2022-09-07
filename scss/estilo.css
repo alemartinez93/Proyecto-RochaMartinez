@@ -2,72 +2,8 @@
 /*Medidas*/
 /* Fuentes*/
 /*Mapa de Variables*/
-/*MEDIAS QUERI*/
-/*LUGARES*/
 @import url("https://fonts.googleapis.com/css2?family=Splash&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap");
-@media (min-width: 568px) and (max-width: 800px) {
-  .cuerpoLugares .PrincipalLugares h2 {
-    color: rgb(8, 8, 8);
-  }
-  .cuerpoLugares .PrincipalLugares .grid-Lugares {
-    grid-template-areas: "PDD" "CP" "LP" "AD";
-    width: 74vw;
-    grid-template-rows: 15rem 15rem;
-  }
-}
-@media (max-width: 567px) {
-  .cuerpoLugares .PrincipalLugares h2 {
-    color: rgb(255, 255, 255);
-  }
-  .cuerpoLugares .PrincipalLugares .grid-Lugares {
-    grid-template-areas: "PDD" "CP" "LP" "AD";
-    width: 70vw;
-    grid-template-columns: 23rem;
-  }
-}
-/*ACTIVIDADES*/
-@media (min-width: 568px) and (max-width: 800px) {
-  .CuerpoActividades .PrincipalActividades h2 {
-    color: rgb(255, 255, 255);
-  }
-  .CuerpoActividades .PrincipalActividades .grid-actividades {
-    grid-template-areas: "Surf" "Caminata" "Camion";
-    width: 74vw;
-    grid-template-columns: 15rem;
-  }
-}
-@media (max-width: 567px) {
-  .CuerpoActividades .PrincipalActividades h2 {
-    color: rgb(255, 255, 255);
-  }
-  .CuerpoActividades .PrincipalActividades .grid-actividades {
-    grid-template-areas: "Surf" "Caminata" "Camion";
-    width: 70vw;
-    grid-template-columns: 23rem;
-  }
-}
-/*IMPERDIBLES*/
-@media screen and (min-width: 568px) and (max-width: 800px) {
-  .CuerpoImperdible .PrincipalImperdible .titulo2imperdible {
-    color: rgb(255, 255, 255);
-  }
-  .CuerpoImperdible .PrincipalImperdible .grid-imperdibles {
-    grid-template-areas: "carnaval" "naufragio" "butia" "cerro ";
-    width: 74vw;
-    grid-template-columns: 15rem 15rem;
-  }
-}
-@media screen and (max-width: 567px) {
-  .CuerpoImperdible .PrincipalImperdible .titulo2imperdible {
-    color: rgb(230, 220, 220);
-  }
-  .CuerpoImperdible .PrincipalImperdible .grid-imperdibles {
-    grid-template-areas: "carnaval" "naufragio" "butia" "cerro";
-    width: 70vw;
-    grid-template-columns: 23rem;
-  }
-}
 /* INDEX 15 */
 /* LUGARES 87 */
 /* IMPERDIBLE 207 */
@@ -93,20 +29,15 @@
   font-size: xx-large;
   text-align: left;
   color: rgb(80, 76, 43);
-  font-size: 100px;
   font-weight: 1400;
-}
-.cuerpoIndex header nav a .logo {
-  width: 8%;
-  margin: 0;
-  right: 0;
+  font-size: 6rem;
 }
 .cuerpoIndex main div .Presentacion {
   text-align: center;
   align-items: center;
   justify-content: center;
-  width: 620px;
-  height: 600px;
+  width: 800px;
+  height: 0px, 95;
   border: solid 0, 5px rgb(179, 151, 126);
   background-color: rgba(255, 218, 185, 0.651);
   font-family: "Edu NSW ACT Foundation", cursive;
@@ -116,7 +47,7 @@
   text-align: center;
   color: rgb(92, 71, 22);
 }
-.cuerpoIndex main div .imagen {
+.cuerpoIndex main div .imagenIndex {
   width: 800px;
   height: 600px, 2;
 }
@@ -129,6 +60,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-weight: bolder;
   border: solid 0, 5px rgb(179, 151, 126);
   font-family: "Edu NSW ACT Foundation", cursive;
   font-size: 30px;
@@ -139,19 +71,24 @@
 
 /*---------------------------------------------------------*/
 /* LUGARES */
-.tituloLugares {
+.cuerpoLugares {
+  background-image: url(../img/SantaTereza.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cuerpoLugares .tituloLugares {
   color: rgb(10, 5, 80);
   font-family: "Splash", cursive;
   font-size: xx-large;
   text-align: left;
   font-size: 40px;
 }
-
-.cuerpoLugares {
-  background-image: url(../img/SantaTereza.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.cuerpoLugares header nav div img {
+  width: 50%;
+  height: 50%;
+  right: auto;
+  position: relative;
 }
 .cuerpoLugares .PrincipalLugares h2 {
   font-family: "Edu QLD Beginner", cursive;
@@ -167,7 +104,7 @@
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: 5px;
        column-gap: 5px;
-  grid-template-areas: "PDD" "CP" "LP" "AD";
+  grid-template-areas: "PDD CP LP AD";
   width: 100%;
   margin: 0 auto;
 }
@@ -252,26 +189,24 @@
 
 /*---------------------------------------------------------*/
 /* IMPERDIBLE */
-.tituloImperdible {
-  font-family: "Splash", cursive;
-  color: rgb(240, 149, 21);
-  font-size: 40px;
-  font-weight: 100;
-}
-
-.logo {
-  width: 8%;
-  position: relative;
-  left: 90%;
-}
-
 .CuerpoImperdible {
   background-image: url(../img/NocheFogon.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.CuerpoImperdible .titulo2imperdible {
+.CuerpoImperdible .tituloImperdible {
+  font-family: "Splash", cursive;
+  color: rgb(240, 149, 21);
+  font-size: 40px;
+  font-weight: 100;
+}
+.CuerpoImperdible header nav div img {
+  width: 50%;
+  height: 50%;
+  left: 10%;
+}
+.CuerpoImperdible header .titulo2imperdible {
   font-family: "Edu QLD Beginner", cursive;
   color: rgb(173, 231, 37);
   font-size: larger;
@@ -283,7 +218,7 @@
   grid-template-rows: auto;
   -moz-column-gap: 5px;
        column-gap: 5px;
-  grid-template-areas: "carnaval" "naufragio" "butia" "cerro";
+  grid-template-areas: "carnaval naufragio butia cerro";
   width: 90%;
   margin: 0 auto;
 }
@@ -402,6 +337,11 @@
   background-position: center;
   background-size: cover;
 }
+.CuerpoActividades header nav div img {
+  width: 50%;
+  height: 50%;
+  left: 10%;
+}
 .CuerpoActividades .titulo2Actividades {
   font-family: "Splash", cursive;
   color: rgb(75, 76, 97);
@@ -515,12 +455,6 @@
 
 /*---------------------------------------------------------*/
 /* CONTACTO */
-.logo {
-  width: 8%;
-  position: relative;
-  left: 90%;
-}
-
 .titulo1 {
   font-family: "Splash", cursive;
   color: rgba(245, 222, 22, 0.815);
@@ -567,6 +501,11 @@
   margin: 0;
   padding: 0;
 }
+.principal header nav div img {
+  width: 50%;
+  height: 50%;
+  left: 10%;
+}
 
 .titulo2contacto {
   font-family: "Edu QLD Beginner", cursive;
@@ -591,6 +530,67 @@
   color: rgb(8, 36, 60);
 }
 
-.btn {
-  right: 0%;
+/*MEDIAS QUERI*/
+/*LUGARES*/
+@media (min-width: 568px) and (max-width: 800px) {
+  .cuerpoLugares .PrincipalLugares h2 {
+    color: rgb(8, 8, 8);
+  }
+  .cuerpoLugares .PrincipalLugares .grid-Lugares {
+    grid-template-areas: "PDD" "CP" "LP" "AD";
+    width: 74vw;
+    grid-template-rows: 15rem 15rem;
+  }
+}
+@media (max-width: 567px) {
+  .cuerpoLugares .PrincipalLugares h2 {
+    color: rgb(255, 255, 255);
+  }
+  .cuerpoLugares .PrincipalLugares .grid-Lugares {
+    grid-template-areas: "PDD" "CP" "LP" "AD";
+    width: 70vw;
+    grid-template-columns: 23rem;
+  }
+}
+/*ACTIVIDADES*/
+@media (min-width: 568px) and (max-width: 800px) {
+  .CuerpoActividades .PrincipalActividades h2 {
+    color: rgb(255, 255, 255);
+  }
+  .CuerpoActividades .PrincipalActividades .grid-actividades {
+    grid-template-areas: "Surf" "Caminata" "Camion";
+    width: 74vw;
+    grid-template-columns: 15rem;
+  }
+}
+@media (max-width: 567px) {
+  .CuerpoActividades .PrincipalActividades h2 {
+    color: rgb(255, 255, 255);
+  }
+  .CuerpoActividades .PrincipalActividades .grid-actividades {
+    grid-template-areas: "Surf" "Caminata" "Camion";
+    width: 70vw;
+    grid-template-columns: 23rem;
+  }
+}
+/*IMPERDIBLES*/
+@media screen and (min-width: 568px) and (max-width: 800px) {
+  .CuerpoImperdible .PrincipalImperdible .titulo2imperdible {
+    color: rgb(255, 255, 255);
+  }
+  .CuerpoImperdible .PrincipalImperdible .grid-imperdibles {
+    grid-template-areas: "carnaval" "naufragio" "butia" "cerro ";
+    width: 74vw;
+    grid-template-columns: 15rem 15rem;
+  }
+}
+@media screen and (max-width: 567px) {
+  .CuerpoImperdible .PrincipalImperdible .titulo2imperdible {
+    color: rgb(230, 220, 220);
+  }
+  .CuerpoImperdible .PrincipalImperdible .grid-imperdibles {
+    grid-template-areas: "carnaval" "naufragio" "butia" "cerro";
+    width: 70vw;
+    grid-template-columns: 23rem;
+  }
 }/*# sourceMappingURL=estilo.css.map */

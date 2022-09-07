@@ -1,0 +1,109 @@
+/*MEDIAS QUERI*/
+
+/*LUGARES*/
+
+@media  (min-width: 568px) and (max-width: 800px)
+ {
+    .cuerpoLugares {
+        .PrincipalLugares {
+            h2 {
+                color: rgb(8, 8, 8);
+            }
+            .grid-Lugares {
+                grid-template-areas: "PDD" "CP" "LP" "AD";
+                width: 74vw;
+                grid-template-rows: 15rem 15rem;
+            }
+        }
+    }
+}
+
+
+@media  (max-width: 567px) {
+    .cuerpoLugares {
+        .PrincipalLugares {
+            h2 {
+                color: rgb(255, 255, 255);
+            }
+            .grid-Lugares {
+                grid-template-areas: "PDD" "CP" "LP" "AD";
+                width:70vw;
+                grid-template-columns: 23rem;
+                
+            }
+        }
+    }
+}
+
+
+/*ACTIVIDADES*/
+
+
+@media  (min-width: 568px) and (max-width: 800px) {
+    .CuerpoActividades {
+        .PrincipalActividades {
+            h2 {
+                color: rgb(255, 255, 255);
+            }
+            .grid-actividades {
+                grid-template-areas: "Surf" "Caminata" "Camion";
+                width: 74vw;
+                grid-template-columns: 15rem ;
+            }
+        }
+    }
+}
+
+
+@media  (max-width: 567px) {
+    .CuerpoActividades {
+        .PrincipalActividades {
+            h2 {
+                color: rgb(255, 255, 255);
+            }
+            .grid-actividades {
+                grid-template-areas: "Surf" "Caminata" "Camion";
+                width: 70vw;
+                grid-template-columns: 23rem;
+            }
+        }
+    }
+}
+
+
+
+
+/*IMPERDIBLES*/
+
+@media screen and (min-width: 568px) and (max-width: 800px) {
+    .CuerpoImperdible {
+        .PrincipalImperdible {
+            .titulo2imperdible {
+                color: rgb(255, 255, 255);
+            }
+            .grid-imperdibles {
+                grid-template-areas: "carnaval" "naufragio""butia""cerro ";
+                width: 74vw;
+                grid-template-columns: 15rem 15rem;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 567px) {
+    .CuerpoImperdible {
+        .PrincipalImperdible {
+            .titulo2imperdible {
+                color: rgb(230, 220, 220);
+            }
+            .grid-imperdibles {
+                grid-template-areas: "carnaval""naufragio""butia""cerro";
+                width: 70vw;
+                grid-template-columns: 23rem;
+            }
+        }
+    }
+}

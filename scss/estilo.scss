@@ -1,5 +1,5 @@
 @import "./variables/variable";
-@import "./variables/mediasqueries";
+
 @import "./variables/mixins.scss";
 @import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
@@ -35,20 +35,23 @@
             font-size: $tamanoTitulos;
             text-align: left;
             @include ColorTitulos (Index);
-            font-size: 100px;
             font-weight: 1400;
+            font-size: 6rem;
         }
 
+
         nav {
-            a {
-                .logo {
-                    width: 8%;
-                    margin: 0;
-                    right: 0;
+            div {
+                a {
+                    .logo { 
+
+                        
+                    }
                 }
             }
         }
     }
+
 
     main {
         div {
@@ -56,8 +59,8 @@
                 text-align: center;
                 align-items: center;
                 justify-content: center;
-                width: 310px*2;
-                height: $AltoPresentacion;
+                width: 400px*2;
+                height: $AltoPresentacion*0, 95;
                 border: solid 0, 5px rgb(179, 151, 126);
                 background-color: map-get($ColoresBase, Index);
                 font-family: $fuenteTexto;
@@ -70,7 +73,7 @@
         }
 
         div {
-            .imagen {
+            .imagenIndex {
                 width: 400px*2;
                 height: $AltoPresentacion*1, 2;
             }
@@ -87,11 +90,13 @@
             text-align: center;
             align-items: center;
             justify-content: center;
+            font-weight: bolder;
             border: solid 0, 5px rgb(179, 151, 126);
 
             font-family: $fuenteTexto;
             font-size: 30px;
             font-style: oblique;
+           
 
             text-align: center;
             color: $colorTextoIndex;
@@ -107,20 +112,35 @@
 
 /* LUGARES */
 
-.tituloLugares {
-    @include ColorTitulos (Lugares);
-    font-family: $fuenteTitulos;
-    font-size: $tamanoTitulos;
-    text-align: left;
-    font-size: 40px;
-}
-
 .cuerpoLugares {
     background-image: url(../img/SantaTereza.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
+    .tituloLugares {
+        @include ColorTitulos (Lugares);
+        font-family: $fuenteTitulos;
+        font-size: $tamanoTitulos;
+        text-align: left;
+        font-size: 40px;
+    }
+
+    header {
+        nav {
+            div {
+
+                img {
+
+                    width: 50%;
+                    height: 50%;
+                    right: auto;
+                    position: relative;
+
+                }
+            }
+        }
+    }
 
     .PrincipalLugares {
         h2 {
@@ -137,7 +157,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             column-gap: 5px;
-            grid-template-areas: "PDD" "CP" "LP" "AD";
+            grid-template-areas: "PDD CP LP AD";
             width: 100%;
             margin: 0 auto;
 
@@ -152,8 +172,6 @@
                 justify-content: center;
                 color: rgb(15, 86, 86);
                 height: max-content;
-
-
             }
 
             .flex-internoL {
@@ -162,7 +180,6 @@
             }
 
             .foto1L {
-
                 height: 5cm;
                 width: 9cm;
                 object-fit: cover;
@@ -176,8 +193,6 @@
             .grid-CaboPolonio {
                 @extend .grid-PuntaDelDiablo;
                 grid-area: CP;
-
-                h1 {}
             }
 
             .flex-internoL {
@@ -186,19 +201,15 @@
             }
 
             .foto2L {
-
                 height: 5cm;
                 width: 9cm;
                 object-fit: cover;
-
-                .flex-internoL {}
             }
+
 
             .grid-LaPaloma {
                 grid-area: LP;
                 @extend .grid-PuntaDelDiablo;
-
-                h1 {}
             }
 
             .foto3L {
@@ -234,18 +245,9 @@
 
 /* IMPERDIBLE */
 
-.tituloImperdible {
-    font-family: 'Splash', cursive;
-    color: rgb(240, 149, 21);
-    font-size: 40px;
-    font-weight: 100;
-}
 
-.logo {
-    width: 8%;
-    position: relative;
-    left: 90%;
-}
+
+
 
 .CuerpoImperdible {
     background-image: url(../img/NocheFogon.jpg);
@@ -253,11 +255,35 @@
     background-position: center;
     background-size: cover;
 
-    .titulo2imperdible {
-        font-family: 'Edu QLD Beginner', cursive;
-        color: rgb(173, 231, 37);
-        font-size: larger;
-        text-align: center;
+    .tituloImperdible {
+        font-family: 'Splash', cursive;
+        color: rgb(240, 149, 21);
+        font-size: 40px;
+        font-weight: 100;
+    }
+
+    header {
+        nav {
+            div {
+
+                img {
+
+                    width: 50%;
+                    height: 50%;
+                    left: 10%;
+
+                }
+            }
+        }
+
+
+
+        .titulo2imperdible {
+            font-family: 'Edu QLD Beginner', cursive;
+            color: rgb(173, 231, 37);
+            font-size: larger;
+            text-align: center;
+        }
     }
 
 
@@ -267,7 +293,7 @@
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: auto;
             column-gap: 5px;
-            grid-template-areas: "carnaval" "naufragio" "butia" "cerro";
+            grid-template-areas: "carnaval naufragio butia cerro";
             width: 90%;
             margin: 0 auto;
 
@@ -413,6 +439,21 @@
     background-position: center;
     background-size: cover;
 
+    header {
+        nav {
+            div {
+
+                img {
+
+                    width: 50%;
+                    height: 50%;
+                    left: 10%;
+
+                }
+            }
+        }
+    }
+
 
     .titulo2Actividades {
         font-family: 'Splash', cursive;
@@ -545,11 +586,7 @@
 /* CONTACTO */
 
 
-.logo {
-    width: 8%;
-    position: relative;
-    left: 90%;
-}
+
 
 .titulo1 {
     font-family: 'Splash', cursive;
@@ -597,6 +634,21 @@
     background-size: cover;
     margin: 0;
     padding: 0;
+
+    header {
+        nav {
+            div {
+
+                img {
+
+                    width: 50%;
+                    height: 50%;
+                    left: 10%;
+
+                }
+            }
+        }
+    }
 }
 
 
@@ -627,6 +679,6 @@
 
 }
 
-.btn {
-    right: 0%;
-}
+
+
+@import "./variables/mediasqueries";
