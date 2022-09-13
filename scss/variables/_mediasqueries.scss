@@ -1,108 +1,152 @@
 /*MEDIAS QUERI*/
 
+/*INDEX*/
+
+
+@media (max-width: 690px) {
+    .cuerpoIndex {
+        .PrincipalIndex {
+            .SeccionTexto {
+                width: 70vw;
+                left: 10%;
+
+                .Presentacion {
+                    width: 70vw;
+                    height: max-content;
+                    align-items: center;
+                    position: relative;
+                }
+            }
+        }
+        .pieIndex {
+            .a {
+                .b {
+                    h1 {
+                        font-size: 10px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 696px) and (max-width: 800px) {
+    .cuerpoIndex {
+        .PrincipalIndex {
+            .SeccionTexto {
+                width: 70vw;
+                left: 10%;
+
+                .Presentacion {
+                    width: 70vw;
+                    height: max-content;
+                    align-items: center;
+                    position: relative;
+                }
+            }
+        }
+
+
+        .pieIndex {
+            .a {
+                .b {
+                    h1 {
+                        font-size: 10px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------------------------------------------------/
 /*LUGARES*/
 
-@media  (min-width: 568px) and (max-width: 800px)
- {
+@media (min-width: 696px) and (max-width: 800px) {
     .cuerpoLugares {
         .PrincipalLugares {
-            h2 {
-                color: rgb(8, 8, 8);
-            }
+
             .grid-Lugares {
-                grid-template-areas: "PDD" "CP" "LP" "AD";
+                grid-template-areas: "PDD""CP""LP""AD";
                 width: 74vw;
-                grid-template-rows: 15rem 15rem;
+                grid-template-columns: 23rem 23rem 23rem 23rem;
             }
         }
     }
 }
 
-
-@media  (max-width: 567px) {
+@media (max-width: 690px) {
     .cuerpoLugares {
         .PrincipalLugares {
-            h2 {
-                color: rgb(255, 255, 255);
-            }
+
             .grid-Lugares {
-                grid-template-areas: "PDD" "CP" "LP" "AD";
-                width:70vw;
-                grid-template-columns: 23rem;
-                
-            }
-        }
-    }
-}
-
-
-/*ACTIVIDADES*/
-
-
-@media  (min-width: 568px) and (max-width: 800px) {
-    .CuerpoActividades {
-        .PrincipalActividades {
-            h2 {
-                color: rgb(255, 255, 255);
-            }
-            .grid-actividades {
-                grid-template-areas: "Surf" "Caminata" "Camion";
-                width: 74vw;
-                grid-template-columns: 15rem ;
-            }
-        }
-    }
-}
-
-
-@media  (max-width: 567px) {
-    .CuerpoActividades {
-        .PrincipalActividades {
-            h2 {
-                color: rgb(255, 255, 255);
-            }
-            .grid-actividades {
-                grid-template-areas: "Surf" "Caminata" "Camion";
+                grid-template-areas: "PDD""CP""LP""AD";
                 width: 70vw;
-                grid-template-columns: 23rem;
+                grid-template-columns: 23rem 23rem 23rem 23rem;
+
             }
         }
     }
 }
 
+/*-------------------------------------------------------------------/
+/*ACTIVIDADES 568*/
 
+@media (min-width: 696px) and (max-width: 800px) {
+    .CuerpoActividades {
+        .PrincipalActividades {
 
+            .grid-actividades {
+                grid-template-areas: "Surf""Caminata""Camion";
+                width: 70vw;
+                grid-template-columns: 23rem 23rem 23rem;
+            }
+        }
+    }
+}
 
+@media (max-width: 690px) {
+    .CuerpoActividades {
+        .PrincipalActividades {
+
+            .grid-actividades {
+                grid-template-areas: "Surf""Caminata""Camion";
+                width: 70vw;
+                grid-template-columns: 23rem 23rem 23rem;
+            }
+        }
+    }
+}
+/*-------------------------------------------------------------------/
 /*IMPERDIBLES*/
 
-@media screen and (min-width: 568px) and (max-width: 800px) {
+@media screen and (min-width: 696px) and (max-width: 800px) {
     .CuerpoImperdible {
         .PrincipalImperdible {
             .titulo2imperdible {
                 color: rgb(255, 255, 255);
             }
             .grid-imperdibles {
-                grid-template-areas: "carnaval" "naufragio""butia""cerro ";
+                grid-template-areas: "carnaval""naufragio""butia""cerro";
                 width: 74vw;
-                grid-template-columns: 15rem 15rem;
+                grid-template-columns: 23rem 23rem 23rem 23rem;
             }
         }
     }
 }
 
-
-
-
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 690px) {
     .CuerpoImperdible {
         .PrincipalImperdible {
             .titulo2imperdible {
-                color: rgb(230, 220, 220);
+                color: rgb(204, 255, 117);
             }
             .grid-imperdibles {
                 grid-template-areas: "carnaval""naufragio""butia""cerro";
                 width: 70vw;
-                grid-template-columns: 23rem;
+                grid-template-columns: 23rem 23rem 23rem 23rem;
             }
         }
     }
