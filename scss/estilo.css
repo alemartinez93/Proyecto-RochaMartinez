@@ -58,10 +58,10 @@
   height: 500;
 }
 .cuerpoIndex .pieIndex .a .b .direccion {
-  font-size: 28px;
+  font-size: 30px;
   font-family: "Combo", cursive;
   text-align: center;
-  font-weight: bolder;
+  font-weight: bold;
   font-style: oblique;
   color: rgb(92, 71, 22);
 }
