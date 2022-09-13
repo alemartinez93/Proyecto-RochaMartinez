@@ -16,7 +16,7 @@
 
 @mixin ColorTitulos ($pagina) {
     @if $pagina == Index {
-        color: rgba(80, 76, 43, 0);
+        color: rgba(80, 76, 43, 0.981);
     }
 
     @else if $pagina == Lugares {
