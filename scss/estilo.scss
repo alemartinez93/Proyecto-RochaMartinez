@@ -28,7 +28,7 @@
     header {
         .tituloIndex {
             font-family: $fuenteTitulos;
-            font-size: $tamanoTitulos;
+            font-size:medium;
             text-align: left;
             @include ColorTitulos (Index);
             font-weight: 1400;
