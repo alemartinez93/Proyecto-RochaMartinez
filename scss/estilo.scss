@@ -28,11 +28,11 @@
     header {
         .tituloIndex {
             font-family: $fuenteTitulos;
-            font-size:small;
+            font-size:medium;
             text-align: left;
             @include ColorTitulos (Index);
             font-weight: 1400;
-            font-size: 2rem;
+            font-size: 3rem;
         }
 
             }
