@@ -27,11 +27,11 @@
 }
 .cuerpoIndex header .tituloIndex {
   font-family: "Splash", cursive;
-  font-size: medium;
+  font-size: small;
   text-align: left;
   color: rgba(80, 76, 43, 0.981);
   font-weight: 1400;
-  font-size: 6rem;
+  font-size: 2rem;
 }
 .cuerpoIndex main div .Presentacion {
   text-align: center;
