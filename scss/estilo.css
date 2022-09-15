@@ -14,7 +14,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .cuerpoIndex {
@@ -464,7 +463,7 @@
 
 .principal {
   background-image: url(../img/Palmares.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   margin: 0;
   padding: 0;
