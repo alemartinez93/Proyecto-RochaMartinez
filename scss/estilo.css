@@ -340,7 +340,6 @@
   grid-template-areas: "Surf Caminata Camion";
   width: 100%;
   align-items: center;
-  margin: 0;
 }
 .CuerpoActividades .PrincipalActividades .grid-actividades .grid-Surf, .CuerpoActividades .PrincipalActividades .grid-actividades .grid-Camion, .CuerpoActividades .PrincipalActividades .grid-actividades .grid-Caminata {
   grid-area: Surf;
@@ -569,6 +568,7 @@
     grid-template-areas: "PDD" "CP" "LP" "AD";
     width: 74vw;
     grid-template-columns: 23rem 23rem 23rem 23rem;
+    left: 30rem;
   }
 }
 @media (max-width: 690px) {
@@ -576,6 +576,7 @@
     grid-template-areas: "PDD" "CP" "LP" "AD";
     width: 70vw;
     grid-template-columns: 23rem 23rem 23rem 23rem;
+    margin: 50px;
   }
 }
 /*-------------------------------------------------------------------/
@@ -585,6 +586,7 @@
     grid-template-areas: "Surf" "Caminata" "Camion";
     width: 70vw;
     grid-template-columns: 23rem 23rem 23rem;
+    left: 30rem;
   }
 }
 @media (max-width: 690px) {
@@ -592,6 +594,7 @@
     grid-template-areas: "Surf" "Caminata" "Camion";
     width: 70vw;
     grid-template-columns: 23rem 23rem 23rem;
+    margin: 50px;
   }
 }
 /*-------------------------------------------------------------------/
@@ -604,6 +607,7 @@
     grid-template-areas: "carnaval" "naufragio" "butia" "cerro";
     width: 74vw;
     grid-template-columns: 23rem 23rem 23rem 23rem;
+    left: 30rem;
   }
 }
 @media screen and (max-width: 690px) {
@@ -625,7 +629,6 @@
     height: 100%;
     width: 100%;
     margin: 0%;
-    left: 0;
   }
 }
 @media screen and (max-width: 690px) {
@@ -636,6 +639,5 @@
     height: 100%;
     width: 100%;
     margin: 0%;
-    left: 0;
   }
 }/*# sourceMappingURL=estilo.css.map */
