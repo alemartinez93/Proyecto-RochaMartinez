@@ -111,7 +111,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
   grid-template-areas: "PDD CP LP AD";
   width: 100%;
   align-items: center;
