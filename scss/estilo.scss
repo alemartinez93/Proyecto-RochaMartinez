@@ -137,6 +137,8 @@
             column-gap: 5px;
             grid-template-areas: "PDD CP LP AD";
             width: 100%;
+            align-items: center;
+            margin: 0;
             
             .grid-PuntaDelDiablo {
                 grid-area: PDD;
@@ -270,6 +272,8 @@
             column-gap: 5px;
             grid-template-areas: "carnaval naufragio butia cerro";
             margin: 0;
+            align-items: center;
+            
             .grid-carnaval {
                 grid-area: carnaval;
                 display: flex;
@@ -403,7 +407,8 @@
             column-gap: 5px;
             grid-template-areas: "Surf Caminata Camion";
             width: 100%;
-            margin: auto;
+            align-items: center;
+            margin: 0;
             .grid-Surf {
                 grid-area: Surf;
                 display: flex;
