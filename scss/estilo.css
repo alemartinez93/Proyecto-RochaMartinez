@@ -14,6 +14,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .cuerpoIndex {
@@ -93,7 +94,7 @@
   position: relative;
 }
 .cuerpoLugares .PrincipalLugares h2 {
-  font-family: "Edu QLD Beginner", cursive;
+  font-family: "Combo", cursive;
   color: rgba(12, 35, 69, 0.668);
   font-size: larger;
   text-align: center;
@@ -210,7 +211,7 @@
   left: 10%;
 }
 .CuerpoImperdible header .titulo2imperdible {
-  font-family: "Edu QLD Beginner", cursive;
+  font-family: "Combo", cursive;
   color: rgba(173, 231, 37, 0.819);
   font-size: 23px;
   text-align: center;
@@ -316,7 +317,7 @@
   font-size: 23px;
 }
 .CuerpoActividades .PrincipalActividades h2 {
-  font-family: "Edu QLD Beginner", cursive;
+  font-family: "Combo", cursive;
   color: rgb(53, 98, 95);
   font-size: larger;
   text-align: center;
@@ -465,8 +466,6 @@
   background-image: url(../img/Palmares.jpg);
   background-repeat: repeat;
   background-size: cover;
-  margin: 0;
-  padding: 0;
 }
 .principal header nav div img {
   width: 50%;
@@ -506,6 +505,18 @@
   height: 40%;
   width: 40%;
   left: 30%;
+}
+
+.pie {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  background-color: rgba(39, 38, 38, 0.462);
+  color: aliceblue;
+  font-size: larger;
+  left: 90%;
+  font-family: "Combo", cursive;
 }
 
 /*MEDIAS QUERI*/
