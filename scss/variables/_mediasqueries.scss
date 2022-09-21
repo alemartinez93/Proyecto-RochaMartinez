@@ -72,8 +72,7 @@
                 grid-template-areas: "PDD""CP""LP""AD";
                 width: 74vw;
                 grid-template-columns: 23rem 23rem 23rem 23rem;
-                left: 30rem;
-                
+                margin: 10px;
             }
         }
     }
@@ -87,7 +86,8 @@
                 grid-template-areas: "PDD""CP""LP""AD";
                 width: 70vw;
                 grid-template-columns: 23rem 23rem 23rem 23rem;
-                margin: 50px;
+                margin: 10px;
+               
 
             }
         }
@@ -105,7 +105,7 @@
                 grid-template-areas: "Surf""Caminata""Camion";
                 width: 70vw;
                 grid-template-columns: 23rem 23rem 23rem;
-                left: 30rem;
+                margin: 20px;
             }
         }
     }
@@ -119,7 +119,7 @@
                 grid-template-areas: "Surf""Caminata""Camion";
                 width: 70vw;
                 grid-template-columns: 23rem 23rem 23rem;
-                margin: 50px;
+                margin: 20px;
             }
         }
     }
@@ -137,7 +137,7 @@
                 grid-template-areas: "carnaval""naufragio""butia""cerro";
                 width: 74vw;
                 grid-template-columns: 23rem 23rem 23rem 23rem;
-                left: 30rem;
+                margin: 50px;
                 
                 
             }
@@ -156,7 +156,6 @@
                 width: 70vw;
                 grid-template-columns: 23rem 23rem 23rem 23rem;
                 margin: 50px;
-                
             }
         }
     }
@@ -170,7 +169,7 @@
             height:100%;
             width:100%;
             margin:0%;
-            
+            left: 0;
             
         }
     }
@@ -183,7 +182,7 @@
             height:100%;
             width:100%;
             margin:0%;
-            
+            left: 0;
             
            
             
