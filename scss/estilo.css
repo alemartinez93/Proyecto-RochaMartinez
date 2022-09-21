@@ -111,7 +111,6 @@
        column-gap: 5px;
   grid-template-areas: "PDD CP LP AD";
   width: 100%;
-  margin: 0 auto;
 }
 .cuerpoLugares .PrincipalLugares .grid-Lugares .grid-PuntaDelDiablo, .cuerpoLugares .PrincipalLugares .grid-Lugares .grid-AguasDulces, .cuerpoLugares .PrincipalLugares .grid-Lugares .grid-LaPaloma, .cuerpoLugares .PrincipalLugares .grid-Lugares .grid-CaboPolonio {
   grid-area: PDD;
@@ -223,7 +222,7 @@
   -moz-column-gap: 5px;
        column-gap: 5px;
   grid-template-areas: "carnaval naufragio butia cerro";
-  margin: 0 auto;
+  margin: 0;
 }
 .CuerpoImperdible .PrincipalImperdible .grid-imperdibles .grid-carnaval, .CuerpoImperdible .PrincipalImperdible .grid-imperdibles .grid-cerro, .CuerpoImperdible .PrincipalImperdible .grid-imperdibles .grid-butia, .CuerpoImperdible .PrincipalImperdible .grid-imperdibles .grid-naufragios {
   grid-area: carnaval;
@@ -334,7 +333,7 @@
        column-gap: 5px;
   grid-template-areas: "Surf Caminata Camion";
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
 .CuerpoActividades .PrincipalActividades .grid-actividades .grid-Surf, .CuerpoActividades .PrincipalActividades .grid-actividades .grid-Camion, .CuerpoActividades .PrincipalActividades .grid-actividades .grid-Caminata {
   grid-area: Surf;
