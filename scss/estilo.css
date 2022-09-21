@@ -474,14 +474,14 @@
   background-size: cover;
 }
 .principal header nav div img {
-  width: auto;
-  height: auto;
-  left: 10;
+  width: 50%;
+  height: 50%;
+  right: auto;
   position: relative;
 }
 
 .titulo2contacto {
-  font-family: "Edu QLD Beginner", cursive;
+  font-family: "Combo", cursive;
   color: rgba(48, 48, 49, 0.986);
   font-size: medium;
   text-align: center;
@@ -489,7 +489,7 @@
 
 .form-label {
   background-color: aqua;
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Combo", cursive;
   font-size: medium;
   box-sizing: content-box;
   color: rgb(8, 36, 60);
@@ -509,7 +509,7 @@
 .pieContacto .carousel {
   justify-content: center;
   box-sizing: border-box;
-  height: 40%;
+  height: 60%;
   width: 40%;
   left: 30%;
 }
