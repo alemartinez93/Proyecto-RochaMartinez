@@ -154,3 +154,33 @@
         }
     }
 }
+
+@media screen and (min-width: 696px) and (max-width: 800px) {
+    .pieContacto {
+        align-items: center;
+    
+        .carousel {
+            height:100%;
+            width:100%;
+            margin:0%;
+            left: 0;
+            
+        }
+    }
+}
+@media screen and (max-width: 690px) {
+    .pieContacto {
+        align-items: center;
+    
+        .carousel {
+            height:100%;
+            width:100%;
+            margin:0%;
+            left: 0;
+            
+           
+            
+        }
+    }
+}
+

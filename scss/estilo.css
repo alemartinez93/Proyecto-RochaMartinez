@@ -111,7 +111,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: 5px;
-  column-gap: 5px;
+       column-gap: 5px;
   grid-template-areas: "PDD CP LP AD";
   width: 100%;
   align-items: center;
@@ -614,5 +614,28 @@
     grid-template-areas: "carnaval" "naufragio" "butia" "cerro";
     width: 70vw;
     grid-template-columns: 23rem 23rem 23rem 23rem;
+    margin: 50px;
+  }
+}
+@media screen and (min-width: 696px) and (max-width: 800px) {
+  .pieContacto {
+    align-items: center;
+  }
+  .pieContacto .carousel {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 690px) {
+  .pieContacto {
+    align-items: center;
+  }
+  .pieContacto .carousel {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    left: 0;
   }
 }/*# sourceMappingURL=estilo.css.map */
