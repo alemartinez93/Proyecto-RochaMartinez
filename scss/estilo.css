@@ -22,8 +22,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 100;
-  padding: 100;
 }
 .cuerpoIndex header .tituloIndex {
   font-family: "Splash", cursive;
@@ -32,6 +30,12 @@
   color: rgba(80, 76, 43, 0.981);
   font-weight: 1400;
   font-size: 3rem;
+}
+.cuerpoIndex header nav div img {
+  width: 50%;
+  height: 50%;
+  right: auto;
+  position: relative;
 }
 .cuerpoIndex main div .Presentacion {
   text-align: center;
@@ -42,7 +46,6 @@
   border: solid 0, 5px rgb(179, 151, 126);
   background-color: rgba(255, 218, 185, 0.651);
   font-family: "Combo", cursive;
-  font-size: px;
   font-style: oblique;
   font-weight: bolder;
   color: rgb(92, 71, 22);
@@ -471,9 +474,10 @@
   background-size: cover;
 }
 .principal header nav div img {
-  width: 50%;
-  height: 50%;
-  left: 10%;
+  width: auto;
+  height: auto;
+  left: 10;
+  position: relative;
 }
 
 .titulo2contacto {
@@ -493,7 +497,7 @@
 
 .decirnos {
   background-color: aqua;
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Combo", cursive;
   font-size: medium;
   box-sizing: border-box;
   color: rgb(8, 36, 60);

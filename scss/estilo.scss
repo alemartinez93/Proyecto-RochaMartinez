@@ -15,8 +15,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    
+
+
 }
 
 .cuerpoIndex {
@@ -24,22 +24,33 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 100;
-    padding: 100;
+
 
     header {
         .tituloIndex {
             font-family: $fuenteTitulos;
-            font-size:medium;
+            font-size: medium;
             text-align: left;
             @include ColorTitulos (Index);
             font-weight: 1400;
             font-size: 3rem;
         }
 
+        nav {
+            div {
+                img {
+                    width: 50%;
+                    height: 50%;
+                    right: auto;
+                    position: relative;
+                }
             }
-        
-    
+        }
+    }
+
+
+
+
     main {
         div {
             .Presentacion {
@@ -51,38 +62,42 @@
                 border: solid 0, 5px rgb(179, 151, 126);
                 background-color: map-get($ColoresBase, Index);
                 font-family: 'Combo', cursive;
-                font-size: px;
+
                 font-style: oblique;
                 font-weight: bolder;
                 color: $colorTextoIndex;
             }
         }
-        
+
         div {
             .imagenIndex {
                 width: 60vh;
-                height:40vh;
+                height: 40vh;
             }
         }
     }
+
     .pieIndex {
         background-color: map-get($ColoresBase, Index);
-                .MapaRocha {
+
+        .MapaRocha {
             height: 500;
         }
+
         .a {
             .b {
                 .direccion {
                     font-size: 16px;
                     font-family: 'Combo', cursive;
                     text-align: center;
-                    
-                    font-weight:bold;
+
+                    font-weight: bold;
                     font-style: oblique;
                     color: $colorTextoIndex;
                 }
             }
         }
+
         .RedesDiv {
             color: $colorTextoIndex;
             font-weight: bolder;
@@ -100,6 +115,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     .tituloLugares {
         @include ColorTitulos (Lugares);
         font-family: $fuenteTitulos;
@@ -107,6 +123,7 @@
         text-align: left;
         font-size: 40px;
     }
+
     header {
         nav {
             div {
@@ -119,6 +136,7 @@
             }
         }
     }
+
     .PrincipalLugares {
         h2 {
             font-family: 'Combo', cursive;
@@ -131,6 +149,7 @@
             font-size: 23px;
             font-weight: bolder;
         }
+
         .grid-Lugares {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -139,7 +158,7 @@
             width: 100%;
             align-items: center;
             margin: 0;
-            
+
             .grid-PuntaDelDiablo {
                 grid-area: PDD;
                 display: flex;
@@ -152,80 +171,101 @@
                 justify-content: center;
                 color: rgb(15, 86, 86);
                 height: max-content;
+
                 .PDDTitulo {
                     font-family: 'Combo', cursive;
                 }
+
                 .PDD {
                     padding: 0.75rem;
                     height: 30rem;
                     font-family: 'Combo', cursive;
                 }
             }
+
             .flex-internoL {
                 padding: 0.75rem;
                 height: 30rem;
             }
+
             .foto1L {
                 height: 5cm;
                 width: 9cm;
                 object-fit: cover;
+
                 .flex-internoL img {
                     width: 100%;
                     object-fit: cover;
                 }
             }
+
             .grid-CaboPolonio {
                 @extend .grid-PuntaDelDiablo;
                 grid-area: CP;
+
                 .CPTitulo {
                     font-family: 'Combo', cursive;
                 }
+
                 p {
                     @extend.PDD;
                 }
             }
+
             .flex-internoL {
                 padding: 0.75rem;
                 height: 30rem;
             }
+
             .foto2L {
                 @extend .foto1L;
             }
+
             .grid-LaPaloma {
                 grid-area: LP;
                 @extend .grid-PuntaDelDiablo;
+
                 .LPTitulo {
                     font-family: 'Combo', cursive;
                 }
+
                 p {
                     padding: 0.75rem;
                     height: 30rem;
                     font-family: 'Combo', cursive;
                 }
             }
+
             .flex-internoL {
                 padding: 0.75rem;
                 height: 30rem;
             }
+
             .foto3L {
                 @extend .foto1L;
             }
+
             .grid-AguasDulces {
                 grid-area: AD;
                 @extend .grid-PuntaDelDiablo;
+
                 .ADTitulo {
                     font-family: 'Combo', cursive;
                 }
+
                 p {
                     @extend.PDD;
                 }
             }
+
             .flex-internoL {
                 padding: 0.75rem;
                 height: 30rem;
             }
+
             .foto4L {
                 @extend .foto1L;
+
                 .flex-internoL img {
                     object-fit: cover;
                 }
@@ -233,6 +273,7 @@
         }
     }
 }
+
 /*---------------------------------------------------------*/
 /* IMPERDIBLE */
 
@@ -241,12 +282,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     .tituloImperdible {
         font-family: 'Splash', cursive;
         color: rgb(240, 149, 21);
         font-size: 40px;
         font-weight: 100;
     }
+
     header {
         nav {
             div {
@@ -257,6 +300,7 @@
                 }
             }
         }
+
         .titulo2imperdible {
             font-family: 'Combo', cursive;
             color: rgba(173, 231, 37, 0.819);
@@ -265,6 +309,7 @@
             font-weight: bolder;
         }
     }
+
     .PrincipalImperdible {
         .grid-imperdibles {
             display: grid;
@@ -273,7 +318,7 @@
             grid-template-areas: "carnaval naufragio butia cerro";
             margin: 0;
             align-items: center;
-            
+
             .grid-carnaval {
                 grid-area: carnaval;
                 display: flex;
@@ -282,73 +327,92 @@
                 color: rgb(248, 251, 250);
                 background-color: rgba(13, 68, 116, 0.836);
                 align-items: center;
+
                 .CarnavalTitulo {
                     font-family: 'Combo', cursive;
                     font-weight: bolder;
                 }
+
                 .Carnaval {
                     padding: 0.75rem;
                     height: 20rem;
                     font-family: 'Combo', cursive;
                 }
+
                 .foto1I {
                     height: 5cm;
                     width: 9cm;
                     object-fit: cover;
+
                     .flex-internoI img {
                         width: 100%;
                         object-fit: cover;
                     }
                 }
             }
+
             .grid-naufragios {
                 grid-area: naufragio;
                 @extend .grid-carnaval;
+
                 .NaufragiosTitulo {
                     font-family: 'Combo', cursive;
                     font-weight: bolder;
                 }
+
                 p {
                     @extend.Carnaval;
                 }
+
                 .foto2I {
                     @extend .foto1I;
+
                     .flex-internoI img {
                         width: 100%;
                         object-fit: cover;
                     }
                 }
             }
+
             .grid-butia {
                 grid-area: butia;
                 @extend .grid-carnaval;
+
                 .ButiaTitulo {
                     font-family: 'Combo', cursive;
                     font-weight: bolder;
                 }
+
                 p {
                     @extend.Carnaval;
                 }
+
                 .foto3I {
                     @extend .foto1I;
+
                     .flex-internoI img {
                         width: 100%;
                         object-fit: cover;
                     }
                 }
             }
+
             .grid-cerro {
                 grid-area: cerro;
                 @extend .grid-carnaval;
+
                 .CerroTitulo {
                     font-family: 'Combo', cursive;
                     font-weight: bolder;
                 }
+
                 p {
                     @extend.Carnaval;
                 }
+
                 .foto4I {
                     @extend .foto1I;
+
                     .flex-internoI img {
                         width: 100%;
                         object-fit: cover;
@@ -368,11 +432,13 @@
     text-align: left;
     font-size: 40px;
 }
+
 .CuerpoActividades {
     background-image: url(../img/SurfFaro.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     header {
         nav {
             div {
@@ -384,11 +450,13 @@
             }
         }
     }
+
     .titulo2Actividades {
         font-family: 'Splash', cursive;
         color: rgba(53, 79, 94, 0.667);
         font-size: 23px;
     }
+
     .PrincipalActividades {
         h2 {
             font-family: 'Combo', cursive;
@@ -401,6 +469,7 @@
             font-size: 23px;
             font-weight: bolder;
         }
+
         .grid-actividades {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -409,6 +478,7 @@
             width: 100%;
             align-items: center;
             margin: 0;
+
             .grid-Surf {
                 grid-area: Surf;
                 display: flex;
@@ -421,78 +491,98 @@
                 background-color: rgba(88, 148, 167, 0.603);
                 padding: 50 rem;
                 height: max-content;
+
                 .SurfTitulo {
                     font-family: 'Combo', cursive;
                     font-weight: bolder;
                 }
+
                 .Surf {
                     padding: 0.75rem;
                     height: 25rem;
                     font-family: 'Combo', cursive;
                 }
             }
+
             .flex-internoA {
                 padding: 0.75rem;
                 height: 35rem;
             }
+
             .foto1A {
                 height: 5cm;
                 width: 9cm;
                 object-fit: cover;
+
                 .flex-internoA img {
                     width: 100%;
                     object-fit: cover
                 }
+
                 .flex-internoA {
                     width: 100%;
                     object-fit: cover;
                 }
             }
+
             .grid-Caminata {
                 grid-area: Caminata;
                 @extend .grid-Surf;
+
                 .CaminataTitulo {
                     font-family: 'Combo', cursive;
                     font-weight: bolder;
                 }
+
                 p {
                     @extend .Surf;
                 }
             }
+
             .flex-internoA {
                 padding: 0.75rem;
                 height: 35rem;
             }
+
             .foto2A {
                 @extend .foto1A;
+
                 .flex-internoI img {
                     object-fit: cover;
                 }
+
                 .flex-internoA {
                     width: 100%;
                     object-fit: cover;
                 }
             }
+
             .grid-Camion {
                 grid-area: Camion;
                 @extend .grid-Surf;
+
                 .CamionTitulo {
                     font-family: 'Combo', cursive;
                     font-weight: bolder;
                 }
+
                 p {
                     @extend .Surf;
                 }
             }
+
             .flex-internoA {
                 padding: 0.75rem;
                 height: 35rem;
             }
+
             .foto3A {
                 @extend .foto1A;
+
                 .flex-internoI img {
                     object-fit: cover;
                 }
+
                 .flex-internoA {
                     width: 100%;
                     object-fit: cover;
@@ -515,6 +605,7 @@
     margin: 0;
     font-size: 40px;
 }
+
 .titulocontacto2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(239, 216, 216);
@@ -527,6 +618,7 @@
     justify-content: flex-start;
     align-items: center;
 }
+
 .titulo {
     margin: 0;
     padding: 0;
@@ -541,30 +633,34 @@
     justify-content: flex-start;
     align-items: center;
 }
+
 .principal {
     background-image: url(../img/Palmares.jpg);
     background-repeat: repeat;
     background-size: cover;
-  
+
 
     header {
         nav {
             div {
                 img {
-                    width: 50%;
-                    height: 50%;
-                    left: 10%;
+                    width: auto;
+                    height: auto;
+                    left: 10;
+                    position: relative;
                 }
             }
         }
     }
 }
+
 .titulo2contacto {
     font-family: 'Edu QLD Beginner', cursive;
     color: rgba(48, 48, 49, 0.986);
     font-size: medium;
     text-align: center;
 }
+
 .form-label {
     background-color: aqua;
     font-family: 'Edu NSW ACT Foundation', cursive;
@@ -573,16 +669,19 @@
     box-sizing: content-box;
     color: rgb(8, 36, 60);
 }
+
 .decirnos {
     background-color: aqua;
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Combo', cursive;
     ;
     font-size: medium;
     box-sizing: border-box;
     color: rgb(8, 36, 60);
 }
+
 .pieContacto {
     align-items: center;
+
     .carousel {
         justify-content: center;
         box-sizing: border-box;
@@ -592,12 +691,13 @@
     }
 }
 
-.pie {box-sizing: border-box;
-    height:100%;
-    width:100% ;
+.pie {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
     align-items: center;
     background-color: rgba(39, 38, 38, 0.462);
-    
+
     color: aliceblue;
     font-size: larger;
     left: 90%;
